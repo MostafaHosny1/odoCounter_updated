@@ -1,15 +1,26 @@
 let timer = 8000;
+let number_a = 1000549;
+let number_b = 1000333;
+window.odometerOptions = {
+  selector: '.my-numbers',
+  duration: 1000, 
+  minIntegerLen: 6,
+  animation: 'count',
+  format: '(,ddd).ddd' 
+  
+};
+
 setInterval(function(){
   setTimeout(function(){
-    $('.odometer').html(999999);
-  }, timer/2);
+    $('.odometer').html((1+number_a));
+  }, 4000);
   
-  setTimeout(function(){
-    $('.odometer').html(123678);
+ 
+    $('.odometer').html(number_b);
    
-  }, timer/2);
 
-},timer/2);
+
+},8000);
 
 setInterval(function(){
   anime();
